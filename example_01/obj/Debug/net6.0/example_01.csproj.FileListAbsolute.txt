@@ -1,0 +1,15 @@
+C:\Users\Rust\lesson_10_09_22\example_01\obj\Debug\net6.0\example_01.csproj.AssemblyReference.cache
+C:\Users\Rust\lesson_10_09_22\example_01\obj\Debug\net6.0\example_01.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Rust\lesson_10_09_22\example_01\obj\Debug\net6.0\example_01.AssemblyInfoInputs.cache
+C:\Users\Rust\lesson_10_09_22\example_01\obj\Debug\net6.0\example_01.AssemblyInfo.cs
+C:\Users\Rust\lesson_10_09_22\example_01\obj\Debug\net6.0\example_01.csproj.CoreCompileInputs.cache
+C:\Users\Rust\lesson_10_09_22\example_01\bin\Debug\net6.0\example_01.exe
+C:\Users\Rust\lesson_10_09_22\example_01\bin\Debug\net6.0\example_01.deps.json
+C:\Users\Rust\lesson_10_09_22\example_01\bin\Debug\net6.0\example_01.runtimeconfig.json
+C:\Users\Rust\lesson_10_09_22\example_01\bin\Debug\net6.0\example_01.dll
+C:\Users\Rust\lesson_10_09_22\example_01\bin\Debug\net6.0\example_01.pdb
+C:\Users\Rust\lesson_10_09_22\example_01\obj\Debug\net6.0\example_01.dll
+C:\Users\Rust\lesson_10_09_22\example_01\obj\Debug\net6.0\refint\example_01.dll
+C:\Users\Rust\lesson_10_09_22\example_01\obj\Debug\net6.0\example_01.pdb
+C:\Users\Rust\lesson_10_09_22\example_01\obj\Debug\net6.0\example_01.genruntimeconfig.cache
+C:\Users\Rust\lesson_10_09_22\example_01\obj\Debug\net6.0\ref\example_01.dll
