@@ -21,42 +21,46 @@ void FillArray(int[,] matr)//заполнение массива случайн�
     }
 }
 
-void SortArray(int[,] array)//сортировка строк массива по убыванию
-{
-    for (int i = 0; i < array.GetLength(0); i++)
-    {
-        for (int j = 0; j < array.GetLength(1) - 1; j++)
-        {
-            int maxPosition = j;
-            for (int k = j + 1; k < array.GetLength(1); k++)
-            {
-                if (array[i, k] > array[i, maxPosition])
-                {
-                    maxPosition = k;
-                }
-            }
-            int temporary = array[i, j];
-            array[i, j] = array[i, maxPosition];
-            array[i, maxPosition] = temporary;
-        }
-
-    }
-}
-
-
-/*Console.Write("mas[x,y]");
-int x;
-Console.Write("Input x: ");
-while (!int.TryParse(Console.ReadLine(), out x))//проверка что вводится число
-    Console.Write("Неверный ввод! \nВведите значение снова : ");
-int y;
-Console.Write("Input y: ");
-while (!int.TryParse(Console.ReadLine(), out y))//проверка что вводится число
-    Console.Write("Неверный ввод! \nВведите значение снова : ");
-*/
 int[,] matrix = new int[4, 6];
 FillArray(matrix);
 PrintArray(matrix);
 Console.WriteLine();
-SortArray(matrix);
-PrintArray(matrix);
+
+int[] arrayodnomernij = new int[matrix.GetLength(0) * matrix.GetLength(1)];
+int i = 0;
+foreach (var element in matrix)
+{
+    arrayodnomernij[i] = element;
+    i++;
+}
+
+
+for (int j = 0; j < arrayodnomernij.Length - 1; j++)
+{
+    int maxPosition = j;
+    for (int k = j + 1; k < arrayodnomernij.Length; k++)
+        if (arrayodnomernij[k] > arrayodnomernij[maxPosition])
+            maxPosition = k;
+    int temporary = arrayodnomernij[j];
+    arrayodnomernij[j] = arrayodnomernij[maxPosition];
+    arrayodnomernij[maxPosition] = temporary;
+}
+
+foreach (var element in arrayodnomernij)
+    Console.Write($"{element} ");
+
+Console.WriteLine();
+int schetchik = 1;
+for (int k = 0; k < arrayodnomernij.Length - 1; k++)
+{
+    if (arrayodnomernij[k] == arrayodnomernij[k + 1])
+        schetchik++;
+    else
+    {
+        Console.WriteLine("элемент {0} встречается в матрице {1} ", arrayodnomernij[k], schetchik);
+        schetchik = 1;
+    }
+}
+Console.WriteLine("элемент {0} встречается в матрице {1} ", arrayodnomernij[arrayodnomernij.Length - 1], schetchik);
+
+
