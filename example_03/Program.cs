@@ -1,11 +1,11 @@
-﻿int ElementInStroka(string strarray, char strcount)
+﻿
+
+int ElementInStroka(string strarray, char strcount)
 {
     int count = 1;
     foreach (var element in strarray)
-    {
         if (strcount == element)
             count++;
-    }
     return count;
 }
 
